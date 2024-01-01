@@ -1,6 +1,6 @@
 # City of Cape Town Electricity Reading Tool
 
-Command-Line Interface (CLI) to quickly &amp; easily enter City of Cape Town manual electricity readings instead of logging into eservices and navigating through the clunky web interface.
+Command-Line Interface (CLI) to quickly &amp; easily enter City of Cape Town manual electricity readings instead of logging into [eservices](https://eservices.capetown.gov.za/irj/portal) and navigating through the clunky web interface.
 
 ## Usage
 
