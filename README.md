@@ -1,26 +1,79 @@
 # City of Cape Town Electricity Reading Tool
 
-Command-Line Interface (CLI) to quickly &amp; easily enter City of Cape Town manual electricity readings instead of logging into [eservices](https://eservices.capetown.gov.za/irj/portal) and navigating through the clunky web interface.
+## Introduction
 
-## Usage
+Welcome to the City of Cape Town Electricity Reading Tool! This tool simplifies the process of submitting electricity meter readings for residents of Cape Town with electromechanical meters. Say goodbye to manually logging into the e-Services portal and navigating its cumbersome interface. Our Command-Line Interface (CLI) tool automates the submission of readings quickly and accurately.
 
-For now, you'll need to:
+## Features
 
-1. clone the repo locally using `git clone https://github.com/LouwHopley/coct-electricity-reading`
-2. enter the directory using `cd coct-electricity-reading`
-3. set your login credentials in the `.env` file with `echo "COCT_USERNAME=<myusername>\nCOCT_PASSWORD=<mypassword>" > .env` (Don't include the `<` brackets around your username of password. E.g. `echo "COCT_USERNAME=johnsmith\nCOCTPASSWORD=helloworld > .env`)
-4. install dependencies using `npm i`
-5. finally run `npm start` and follow the prompts
+- **Automated Login**: Bypass the login screen of the City of Cape Town's e-services portal directly.
+- **Easy Submission**: Submit your meter readings with simple CLI commands.
+- **Support for Multiple Accounts**: Manage multiple municipal accounts seamlessly.
 
-Next time, simply run `npm start` in the directory.
+## Getting Started
 
-### Multiple municipal accounts?
+Before you begin, ensure you have Node.js installed on your machine. This tool is built with Puppeteer, a Node library which provides a high-level API over the Chrome or Chromium browser.
 
-If you have more than one municipal account, you can specify a different account to use than the default first one.
+### Installation
 
-To do this, add `COCT_ACCOUNT_INDEX=1` to your `.env` file. `0` being the first in the list, `1` the second, `2` the third, etc. If this is not specified, `COCT_ACCOUNT_INDEX` will default to `0`.
+1. **Clone the Repository**
 
---------
+   ```bash
+   git clone https://github.com/LouwHopley/coct-electricity-reading
+   ```
+   
+2. **Navigate to the Directory**
 
-2024
+   ```bash
+   cd coct-electricity-reading
+   ```
 
+3. **Set Up Environment Variables**
+Configure your login credentials in a `.env` file.
+
+   ```bash
+   echo "COCT_USERNAME=myusername\nCOCT_PASSWORD=mypassword" > .env
+   ```
+Replace `myusername` and `mypassword` with your e-services credentials. Ensure not to include the `<` brackets.
+
+4. **Install Dependencies**
+
+   ```bash
+   npm install
+   ```
+
+**Using Multiple Accounts**
+
+If managing multiple municipal accounts, specify the account with `COCT_ACCOUNT_INDEX` in your `.env` file.
+
+   ```bash
+   echo "COCT_ACCOUNT_INDEX=1" >> .env
+   ```
+
+Indices start at `0`. If not specified, `COCT_ACCOUNT_INDEX` defaults to `0`.
+
+### Usage
+
+**Start the Tool**
+  
+  ```bash
+  npm start
+  ```
+
+Follow the on-screen prompts to enter your electricity meter reading.
+
+## Contributing
+This is an open-source tool, and contributions are welcome. Feel free to fork the repository, make your changes, and submit a pull request.
+
+## License
+MIT Licensed.
+
+## Disclaimer
+
+This tool is not affiliated with, authorized, maintained, sponsored, or endorsed by the City of Cape Town or any of its affiliates or subsidiaries. It is a community-driven initiative to simplify the electricity reading submission process. As such, please ensure the accuracy of your meter readings and adhere to all applicable laws and regulations.
+
+The developers and contributors of this tool cannot be held liable for any damages, issues, or inaccuracies that may arise from its use. By using this tool, you agree to take full responsibility for any consequences that result from its use. Always double-check your data and use this tool at your own risk.
+
+Thank you for understanding and using the City of Cape Town Electricity Reading Tool responsibly!
+
+---------
