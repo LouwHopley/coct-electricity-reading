@@ -2,13 +2,7 @@
 
 ## Introduction
 
-Welcome to the City of Cape Town Electricity Reading Tool! This tool simplifies the process of submitting electricity meter readings for residents of Cape Town with electromechanical meters. Say goodbye to manually logging into the e-Services portal and navigating its cumbersome interface. Our Command-Line Interface (CLI) tool automates the submission of readings quickly and accurately.
-
-## Features
-
-- **Automated Login**: Bypass the login screen of the City of Cape Town's e-services portal directly.
-- **Easy Submission**: Submit your meter readings with simple CLI commands.
-- **Support for Multiple Accounts**: Manage multiple municipal accounts seamlessly.
+This tool simplifies the process of submitting electricity meter readings for residents of Cape Town with electromechanical meters. Say goodbye to manually logging into the e-Services portal and navigating its cumbersome interface. This Command-Line Interface (CLI) tool automates and speeds up the submission of readings.
 
 ## Getting Started
 
